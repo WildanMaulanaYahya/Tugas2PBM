@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,17 +11,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(appBarTheme: AppBarTheme(color: Colors.red)),
+      theme: ThemeData(appBarTheme: const AppBarTheme(color: Colors.red)),
       home: Scaffold(
-          appBar: AppBar(title: Text("Candi di Indonesia")),
+          appBar: AppBar(title: const Text("Candi di Indonesia")),
           body: ListView(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Dieng"),
+                  title: const Text("Candi Dieng"),
                   leading: Image.asset(
                     'images/candi-dieng.jpg',
                     fit: BoxFit.fill,
@@ -34,42 +32,42 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Muara Takus"),
+                  title: const Text("Candi Muara Takus"),
                   leading: Image.asset('images/candimuaratakus.jpg'),
                   onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Kalasan"),
+                  title: const Text("Candi Kalasan"),
                   leading: Image.asset('images/candikalasan.jpg'),
                   onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Mendut"),
+                  title: const Text("Candi Mendut"),
                   leading: Image.asset('images/candimendut.jpg'),
                   onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Pawon"),
+                  title: const Text("Candi Pawon"),
                   leading: Image.asset('images/candi-pawon.jpg'),
                   onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Prambanan"),
+                  title: const Text("Candi Prambanan"),
                   leading: Image.asset('images/candi-prambanan.jpeg'),
                   onTap: () {},
                 ),
               ),
               Card(
                 child: ListTile(
-                  title: Text("Candi Borobudur"),
+                  title: const Text("Candi Borobudur"),
                   leading: Image.asset('images/candi-borobudur.jpg'),
                   onTap: () {},
                 ),
