@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +15,10 @@ class Dieng extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.red,
             elevation: 0,
+            title: const Text("Candi Dieng"),
             leading: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.arrow_back_rounded),
+              icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),
           ),
@@ -27,8 +26,8 @@ class Dieng extends StatelessWidget {
             child: Column(
               children: [
                 Image.asset('images/candi-dieng.jpg'),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     '''Candi Dieng merupakan kumpulan candi yang terletak di kaki pegunungan Dieng, Wonosobo, Jawa tengah. Kawasan Candi Dieng menempati dataran pada ketinggian 2000 m di atas permukaan laut, memanjang arah utara-selatan sekitar 1900 m dengan lebar sepanjang 800 m.
           Kumpulan candi Hindu beraliran Syiwa yang diperkirakan dibangun antara akhir abad ke-8 sampai awal abad ke-9 ini diduga merupakan candi tertua di Jawa. Sampai saat ini belum ditemukan informasi tertulis tentang sejarah Candi Dieng, namun para ahli memperkirakan bahwa kumpulan candi ini dibangun atas perintah raja-raja dari Wangsa Sanjaya. Di kawasan Dieng ini ditemukan sebuah prasasti berangka tahun 808 M, yang merupakan prasasti tertua bertuliskan huruf Jawa kuno, yang masih masih ada hingga saat ini. Sebuah Arca Syiwa yang ditemukan di kawasan ini sekarang tersimpan di Museum Nasional di Jakarta. Pembangunan Candi Dieng diperkirakan berlangsung dalam dua tahap. Tahap pertama yang berlangsung antara akhir abad ke-7 sampai dengan perempat pertama abad ke-8, meliputi pembangunan Candi Arjuna, Candi Semar, Candi Srikandi dan Candi Gatutkaca. Tahap kedua merupakan kelanjutan dari tahap pertama, yang berlangsung samapi sekitar tahun 780 M.
