@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Prambanan());
-}
-
 class Prambanan extends StatelessWidget {
   const Prambanan({Key? key}) : super(key: key);
 
@@ -17,7 +13,9 @@ class Prambanan extends StatelessWidget {
             elevation: 0,
             title: const Text("Candi Prambanan"),
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),
@@ -25,7 +23,7 @@ class Prambanan extends StatelessWidget {
           body: SingleChildScrollView(
             child: Column(
               children: [
-                Image.asset('images/candi-prambanan.jpg'),
+                Image.asset('images/candi-prambanan.jpeg'),
                 const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(

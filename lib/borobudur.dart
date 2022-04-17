@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Borobudur());
-}
-
 class Borobudur extends StatelessWidget {
   const Borobudur({Key? key}) : super(key: key);
 
@@ -17,7 +13,9 @@ class Borobudur extends StatelessWidget {
             elevation: 0,
             title: const Text("Candi Borobudur"),
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),

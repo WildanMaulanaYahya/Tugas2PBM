@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Pawon());
-}
-
 class Pawon extends StatelessWidget {
   const Pawon({Key? key}) : super(key: key);
 
@@ -17,7 +13,9 @@ class Pawon extends StatelessWidget {
             elevation: 0,
             title: const Text("Candi Pawon"),
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),

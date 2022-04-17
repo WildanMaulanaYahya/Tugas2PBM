@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Mendut());
-}
-
 class Mendut extends StatelessWidget {
   const Mendut({Key? key}) : super(key: key);
 
@@ -17,7 +13,9 @@ class Mendut extends StatelessWidget {
             elevation: 0,
             title: const Text("Candi Mendut"),
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),

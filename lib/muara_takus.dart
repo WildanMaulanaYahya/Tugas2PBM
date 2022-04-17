@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MuaraTakus());
-}
-
 class MuaraTakus extends StatelessWidget {
   const MuaraTakus({Key? key}) : super(key: key);
 
@@ -17,7 +13,9 @@ class MuaraTakus extends StatelessWidget {
             elevation: 0,
             title: const Text("Candi Muara Takus"),
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: const Icon(Icons.arrow_back_rounded),
               color: Colors.white,
             ),
