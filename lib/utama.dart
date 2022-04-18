@@ -27,7 +27,6 @@ class Utama extends StatelessWidget {
                   title: const Text("Candi Dieng"),
                   leading: Image.asset(
                     'images/candi-dieng.jpg',
-                    fit: BoxFit.fill,
                   ),
                   onTap: () {
                     Navigator.push(
